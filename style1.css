@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+.img{
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    border-radius: 49%;
+}
+
+h1{
+    text-transform: capitalize;
+    margin-top: 7% ;
+    color: rgb(114, 5, 5);
+}
+hr{
+    margin-bottom: 4%;
+}
+.main{
+    width: 100wh;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: rgb(211, 211, 211);
+}
+
+form{
+    margin-top: 3%;
+    width: 40%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+}
+#page2{
+    display: none;
+}
+.container{
+    border-radius:10px;
+    width: 90%;
+    margin: 3% auto;
+}
+.container div{
+    display: flex;
+    padding: 0.4rem 0;
+}
+.container div div{
+    width: 33%;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+input[type=text],
+input[type=number],
+input[type=email]{
+    width: 59%;
+    border-radius: 7px;
+    border: 0.1pc rgb(121, 121, 121) solid;
+    text-transform:capitalize;
+    font-weight: 700;
+    font-size: 1.03rem;
+}
+input[type=email]{
+    text-transform: none;
+}
+#next{
+    padding: 0.7rem 1.4rem;
+    background: rgba(1, 53, 14, 1);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: capitalize;
+    border-radius: 7px;
+    margin-top: 3% ;
+}
+fieldset{
+    border: 1px rgb(121, 121, 121) solid ;
+    width: 90%;
+    text-transform: capitalize;
+}
+legend{
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+input[type=checkbox]{
+    margin-top: 2.4%;
+}
+select{
+    width: 59%;
+    border-radius: 7px;
+    text-transform:capitalize;
+    font-weight: 700;
+    font-size: 1.03rem;
+}
+.btn{
+    width: 87%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3%;
+}
+.btn button{
+    padding: 0.4rem 1rem;
+    border-radius: 7px;
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+#prev{
+    background: green;
+    color: white
+}
+#sub{
+    background: green;
+    color: #fff;
+}
+::placeholder{
+    font-size: 0rem;
+}
+@media screen and (max-width:1000px) {
+    h1{
+        font-size: 1.7rem;
+        margin-top: 7%;
+    }
+    img{
+        width: 23%;
+        height: 23%;
+    }
+    form{
+        width: 49%;
+    }
+}
+@media screen and (max-width:780px){
+    .container div div{
+        width: 40%;
+    }
+    fieldset{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:649px){
+    form{
+        width: 60%;
+    }
+}
+@media screen and (max-width:534px){
+    form{
+        width: 64%;
+    }
+    h1{
+        font-size: 1.6rem;
+    }
+}
+@media screen and (max-width:500px){
+    h1{
+        font-size: 1.2rem;
+    }
+    .container div div{
+        font-size: 0.8rem;
+    }
+    #next{
+        padding: 0.4rem 1rem;
+        font-weight: 700;
+        font-size: 1rem;
+        text-transform: capitalize;
+        margin-top: 2.3% ;
+    }
+    #page2 div div{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:366px){
+    #page1 div div{
+        display: none;
+    }
+    #page2 .div{
+        display: none;
+    }
+    #page2 .en{
+        display: none;
+    }
+    ::placeholder{
+        font-size: 1rem;
+        font-weight: 470;
+        color: rgb(53, 53, 53);
+        text-align: center;
+    }
+    input[type=text],
+    input[type=number],
+    input[type=email],
+    select{
+        width: 88%;
+        margin: auto;
+        border-radius: 4px;
+    }
+    select{
+        padding: 0.3rem 0;
+    }
+    fieldset div div{
+        display: block;
+    }
+    
+    h1{
+        font-size: 1.1rem;
+    }
+    #next{
+        margin: 2% auto;
+    }
+    
+}
+@media screen and (max-width:280px){
+    h1{
+        font-size: 0.9rem;
+    }
+    ::placeholder{
+        font-size: 0.8rem;
+        font-weight: 470;
+        color: rgb(53, 53, 53);
+        text-align: center;
+    }
+    input[type=text],
+    input[type=number],
+    input[type=email]{
+        width: 80%;
+    }
+    #next{
+        padding: 0.3rem 0.8rem;
+        font-weight: 700;
+        font-size: 0.8rem;
+        text-transform: capitalize;
+        margin: 1% auto ;
+        
+    }
+    #page2{
+        width: 98%;
+    }
+
+
+}
+@media screen and (max-width:700px){
+    #page2{
+        width: 90%;
+    }
+    #page2 div div{
+        width: 60%;
+    }
+}
+@media screen and (max-width:584px) {
+    select{
+        font-size: 0.8rem;
+    }
+    .btn button{
+        padding: 0.3rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    .btn{
+        width: 94%;
+    }
+
+}
+@media screen and (max-width:450px){
+    #page2 div div{
+        font-size: 0.79rem;
+        width: 50%;
+    }
+    .btn button{
+        padding: 0.2rem 0.7rem;
+        font-size: 0.82rem;
+    }
+}
+@media screen and (max-width:280px){
+    .btn button{
+        padding: 0.1rem 0.4rem;
+        font-size: 0.7rem;
+    }
+
+}
+
+
+
+

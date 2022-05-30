@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .main{
+            width: 100%;
+            height: 100vh;
+            background: rgb(236, 236, 236);
+        }
+        form{
+            position: relative;
+            top: 10rem;
+        }
+        .content{
+            width: 30%;
+            height: 40vh;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0 rgb(43, 43, 43);
+            background: #fff;
+            padding: 0;
+        }
+        .row{
+            width: 100%;
+        }
+        .heading{
+            width: 100%;
+            background: rgb(63, 49, 255);
+            padding: 1rem 0;
+            color: #fff;
+            text-transform: capitalize;
+            font-family: 'Roboto Slab', serif;
+            border-radius: 10px 10px 0 0;
+        }
+        h2{
+            margin-left: 3%;
+        }
+        input{
+            width: 80%;
+            padding: 0.3rem 0;
+            font-size: 1rem;
+            margin-left: 8%;
+            margin-top: 4%;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid rgb(15, 0, 230) ;
+        }
+        #email{
+            margin-top: 6%;
+        }
+        span{
+            color:  red;
+            font-weight: bolder;
+        }
+        ::placeholder{
+            text-align: center;
+        }
+        a{
+            color: rgb(17, 0, 255);
+            text-decoration: none;
+            margin-left: 8%;
+            font-size: 0.8rem;
+        }
+        button{
+            background: rgb(63, 49, 255);
+            padding: 0.4rem 0.8rem;
+            border-radius: 10px;
+            color: white;
+            text-transform: capitalize;
+            font-weight: bolder;
+            margin-left: 8%;
+            margin-top: 5%;
+            cursor: pointer;
+        }
+        @media screen and (max-width:1024px) {
+            .content{
+                width: 35%;
+                height: 45vh;
+            }
+            form{
+                top: 7rem;
+            }
+        }
+        @media screen and (max-width:790px) {
+            .content{
+                width: 50%;
+            }
+        }
+        @media screen and (min-width:1025px) {
+            .content{
+                height: 45vh;
+            }
+        }
+        @media screen and (max-width:425px) {
+            .content{
+                width: 60%;
+            }
+            h2{
+                font-size: 1.2rem;
+            }
+            input{
+                margin-top: 10%;
+            }
+            button{
+                margin-top: 9%;
+            }
+            a{
+                font-size: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form action="signin.php" method="post" name="sign_in" onsubmit="return validations()">
+            <div class="content">
+                <div class="row">
+                    <div class="heading">
+                        <h2>sign in form</h2>
+                    </div>
+                    <div>
+                        <input type="text" name="email" id="email" placeholder="email" required> <br>
+                        <input type="password" name="password" id="paswrd" placeholder="password" required autocomplete="off"> <br>
+                        <span id="spn"></span>
+                        <a href="changepasswrd.html">change password</a><br>
+                        <button type="submit">done</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+
+<script>
+    
+</script>
+</html>

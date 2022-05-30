@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .alrt{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="connect.php" method="post">
+        <input type="text" name="name" id="name" placeholder="name"><br>
+        <h3 class="alrt"></h3>
+        <input type="text" name="fathername" id="fathername" placeholder="fathername"><br>
+        <input type="text" name="mothername" id="mothername" placeholder="mothername">
+        <button type="submit">submit</button>
+    </form>
+</body>
+<script>
+    let fname = document.getElementById("name");
+    fname.addEventListener("change",check);
+    let alrt = document.getElementsByClassName("alrt");
+    function check(){
+        if(fname.value=="mansi"){
+            let err = "**  name lenght should be between 3 to 60!";
+            alrt[0].innerHTML = err;
+            alrt[0].style.display = "block";
+            alrt[0].style.color = "red";
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+.img{
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    border-radius: 49%;
+}
+
+h1{
+    text-transform: capitalize;
+    margin-top: 7% ;
+    color: rgb(114, 5, 5);
+}
+hr{
+    margin-bottom: 4%;
+}
+.main{
+    width: 100wh;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: rgb(211, 211, 211);
+}
+form{
+    margin-top: 3%;
+    width: 40%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+}
+.bx1{
+    height: 32rem;
+    overflow: scroll;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+/*::-webkit-scrollbar-track{
+    border: 7px solid black;
+    border-bottom: none;
+}*/
+::-webkit-scrollbar-thumb{
+    background: gray;
+    border-radius: 4px;
+}
+.container{
+    border-radius:10px;
+    width: 90%;
+    margin: 3% auto;
+}
+.container div{
+    display: flex;
+    padding: 0.4rem 0;
+}
+.container div div{
+    width: 39%;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    
+}
+.cn{
+    font-size: 1.1rem;
+    
+}
+
+
+input[type=text],
+input[type=number],
+input[type=email]{
+    width: 59%;
+    border-radius: 7px;
+    border: 0.1pc rgb(121, 121, 121) solid;
+    text-transform:capitalize;
+    font-weight: 700;
+    font-size: 1.03rem;
+    margin-left: 10px;
+}
+input[type=email]{
+    text-transform: none;
+}
+fieldset{
+    border: 1px rgb(121, 121, 121) solid ;
+    width: 99%;
+    text-transform: capitalize;
+    padding-left: 4px;
+}
+legend{
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+input[type=checkbox]{
+    margin-top: 2.4%;
+}
+select{
+    width: 59%;
+    border-radius: 7px;
+    text-transform:capitalize;
+    font-weight: 700;
+    font-size: 1.03rem;
+    margin-left: 10px;
+}
+
+#sub{
+    background: green;
+    color: #fff;
+    padding: 0.7rem 0.8rem;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin-top: 4%;
+}
+.alrt{
+    display: none;
+    font-size: 10px;
+    font-weight: 800;
+    text-align: right;
+}
+::placeholder{
+    font-size: 0rem;
+}
+/*adding responsiveness */
+@media screen and (max-width:1030px) {
+    h1{
+        font-size: 1.6rem;
+        margin-top: 7%;
+    }
+    img{
+        width: 23%;
+        height: 23%;
+    }
+    form{
+        width: 49%;
+    }
+}
+@media screen and (max-width:833px){
+    .container div div{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width:780px){
+    .container div div{
+        width: 40%;
+    }
+    fieldset{
+        width: 100%;
+    }
+    #page2 div div{
+        width: 40%;
+    }
+    
+}
+@media screen and (max-width:649px){
+    form{
+        width: 60%;
+    }
+}
+@media screen and (max-width:534px){
+    form{
+        width: 64%;
+    }
+    h1{
+        font-size: 1.6rem;
+    }
+}
+@media screen and (max-width:500px){
+    h1{
+        font-size: 1.2rem;
+    }
+    .container div div{
+        font-size: 0.8rem;
+    }
+    ::-webkit-scrollbar{
+        width: 5.3px;
+    }
+    #sub{
+        padding: 0.4rem 0.7rem;
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width:487px){
+    form{
+        width: 74%;
+    }
+    .container{
+        width: 95%;
+    }
+}
+@media screen and (max-width:380px){
+    #page1 div div{
+        display: none;
+    }
+    #page2 .div{
+        display: none;
+    }
+    #page2 .en{
+        display: none;
+    }
+    #page2 .rn{
+        display: none;
+    }
+    ::placeholder{
+        font-size: 1rem;
+        font-weight: 470;
+        color: rgb(53, 53, 53);
+        text-align: center;
+    }
+    .alrt{
+        text-align: center;
+    }
+    input[type=text],
+    input[type=number],
+    input[type=email],
+    select{
+        width: 88%;
+        margin: auto;
+        border-radius: 4px;
+    }
+    select{
+        padding: 0.3rem 0;
+        text-align: center;
+    }
+    fieldset div div{
+        display: block;
+    }
+    
+    h1{
+        font-size: 1.1rem;
+        margin-left: 3%;
+    }
+    img{
+        margin-right: 3%;
+    }
+}
+@media screen and (max-width:280px){
+    h1{
+        font-size: 0.9rem;
+    }
+    ::placeholder{
+        font-size: 0.8rem;
+        font-weight: 470;
+        color: rgb(53, 53, 53);
+        text-align: center;
+    }
+    input[type=text],
+    input[type=number],
+    input[type=email]{
+        width: 80%;
+        
+    }
+}
+@media screen and (max-width:700px){
+    .container div div{
+        font-size: 1rem;
+        width: 42%;
+    }
+    #page2 div div{
+        width: 42%;
+    }
+    .container div .cn{
+        font-size: 0.9rem;
+        font-weight: 1100;
+    }
+    #page2 .en{
+        font-size: 0.93rem;
+    }
+}
+@media screen and (max-width:584px) {
+    select{
+        font-size: 0.8rem;
+    }
+
+}
+@media screen and (max-width:450px){
+    #page2 div div{
+        font-size: 0.79rem;
+        width: 44%;
+    }
+    .container div div{
+        font-size: 0.79rem;
+        width: 44%;
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Failed</title>
+    <style>
+        .main{
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0,0,0,0.3);
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            border: rebeccapurple 2px solid;
+        }
+        .content{
+            width: 40%;
+            height: 44%;
+            border-radius: 7px;
+            background-color: #fff;
+            margin-top: 13%;
+            box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+        }
+        h1{
+            text-align: center;
+            text-transform: capitalize;
+            color: rgb(228, 23, 23);
+            margin-top: 4rem;
+        }
+        p{
+            text-align: center;
+        }
+        @media screen and (max-width:858px) {
+            h1{
+                font-size: 1.4rem;
+                margin-top: 5rem;
+            }
+            p{
+                font-size: 0.9rem;
+            }
+            .content{
+                padding: 0 1rem;
+            }
+        }
+        @media screen and (max-width:430px) {
+            h1{
+                font-size: 1rem;
+                margin-top: 4rem;
+            }
+            p{
+                font-size: 0.7rem;
+            }
+            .content{
+                margin-top: 47%;
+                height: 36%;
+                padding-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="content" >
+            <div class="text">
+                <h1>Failed!</h1>
+                <p> Your data in not submitted successfully due to some technical error.</p>
+                <p>please try again or later.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

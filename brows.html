@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marksheet</title>
+    <style>
+        .cont{
+            width: 100%;
+            border: 1px red solid;
+        }
+        .row{
+            width: 40%;
+            border: springgreen 2px solid;
+            margin: auto;
+            margin-top: 15%;
+            height: 30vh;
+        }
+        .col{
+            width: 100%;
+            border: black solid 1px;
+            margin-top: 10%;
+            height: auto;
+        }
+        label{
+            margin:10%;
+            border: purple 2px solid;
+            background: blueviolet;
+        }
+        button{
+            margin-top: 4%;
+            margin-left: 15%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <form action="status.php" method="post" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col">
+                    <label for="marksheet">attach marksheet</label><input type="file" name="marksheet" id="marksheet" placeholder="File">
+                    <br>
+                    <button type="submit">Send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

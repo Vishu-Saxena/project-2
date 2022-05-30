@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="main">
+        <form action="connect.php" method="post">
+            <div class="container"id="page1">
+                <div class="img">
+                    <h1>personal details</h1>
+                    <img src="logo.jpg" alt="">
+                </div>
+                <hr>
+                <div><div> first name :</div> <input type="text" name="firstname" id="firstname" class="inp" placeholder="first name" required ></div>
+                <div> <div> middle name :</div> <input type="text" name="middlename" id="middlename" placeholder="middle name"></div>
+                <div><div> last name :</div> <input type="text" name="lastname" id="lastname" placeholder="last name" class="inp" ></div>
+                <div><div> father name :</div> <input type="text" name="fathername" id="father" placeholder="father name" class="inp" ></div>
+                <div><div> pin-code:</div> <input type="number" name="pincode" id="pin" class="inp" placeholder="pin-code"></div>
+                <div><div> contact NO :</div> <input type="number" name="contact" id="cn" class="inp" placeholder="contact NO"></div>
+                <div><div> e-mail :</div> <input type="email" name=" email" id="email" class="inp" placeholder="email"></div>
+                <div><button id="next" type="button"> next </button></div>
+            </div>
+        </form>
+        
+
+        <form action="connect.php" method="post" style="margin-bottom: 8%;">
+            <div class="container" id="page2">
+                <div class="fbx"><div class="en"> Enrollment No :</div> <input type="number" name="en" placeholder="enrollment no" id="en" required></div>
+                <div><div class="en">Roll-No</div><input type="number" name="rollno" id="rn" placeholder="rollno" required></div>
+                <div><div class="div">department:</div>
+                <select name="department" id="department" required>
+                    <option value="">select department</option>
+                    <option value="cs">Computer Science</option>
+                    <option value="ele">chmistry</option>
+                    <option value="Physics">Physics</option>
+                    <option value="ins">instrumental</option>
+                    <option value="botany">botany</option>
+                    <option value="zoology">zoology</option>
+                </select></div>
+                <div><div class="div">course</div>
+                    <select name="course" id="course" required >
+                        <option value="">select your course</option>
+                        <option value="cs">bsc(hons)Computer Science</option>
+                        <option value="ele">bsc(hons)chmistry</option>
+                        <option value="Physics">bsc(hons)Physics</option>
+                        <option value="ins">bsc(hons)instrumental</option>
+                        <option value="botany">bsc(hons)botany</option>
+                        <option value="zoology">bsc(hons)zoology</option>
+                    </select>
+                </div> <br>
+                <div><fieldset>
+                    <legend>Certificate Type</legend>
+                    <div class="cer" style="width: 90%;"><div style="width: 90%;">transfer certificate</div><input type="checkbox" name="tc" id="tc"></div>
+                    <div class="cer"style="width: 90%;"> <div style="width: 90%;">marksheet</div> <input type="checkbox" name="ms" id="ms"></div>
+                    <div class="cer"style="width: 90%;"> <div style="width: 90%;">achievement certificate</div> <input type="checkbox" name="ac" id="ac"></div>
+                </fieldset></div>
+                <div class="btn"><button id="prev">previous</button>
+                <button type="submit" id="sub">submit</button></div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        let nxbtn = document.getElementById('next');
+        nxbtn.addEventListener('click',nex);
+        function nex() {
+            let req = document.getElementsByClassName('inp');
+            for(i of req){
+                if(i.value == ''){
+                    let b = i.parentElement.firstChild.textContent;
+                    console.log(b);
+                    let a = prompt('enter '+b);
+                    i.value=a;
+                }
+                else{
+                    let pg2 = document.getElementById('page2');
+                    let pg1 = document.getElementById('page1');
+                    pg1.style.display='none';
+                    pg2.style.display='block';
+                }
+            }
+        }
+        let previous = document.getElementById('prev');
+        previous.addEventListener('click', pre);
+        function pre() {
+            let pg2 = document.getElementById('page2');
+            let pg1 = document.getElementById('page1');
+            pg2.style.display = 'none';
+            pg1.style.display= 'block';
+        }
+
+        
+    </script>
+</body>
+</html>

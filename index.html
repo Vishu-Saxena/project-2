@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form.bcas</title>
+    <link rel="stylesheet" href="style3.css">
+    <script src="form.js" defer></script>
+</head>
+<body>
+    <div class="main">
+        <form action="connect.php" method="post" id="formname" name="form_college" onsubmit="return validations()">
+            <div class="bx1">
+                <div class="container"id="page1">
+                    <div class="img">
+                        <h1>personal details</h1>
+                        <img src="logo.jpg" alt="">
+                    </div>
+                    <hr>
+                    <div><div> first name*</div> <input type="text" name="firstname" id="firstname" class="inp" placeholder="first name"></div>
+                    <h3 class="alrt"></h3>
+                    <div> <div> middle name</div> <input type="text" name="middlename" id="middlename" placeholder="middle name"></div>
+                    <h3 class="alrt"></h3>
+                    <div><div> last name*</div> <input type="text" name="lastname" id="lastname" placeholder="last name" class="inp"></div>
+                    <h3 class="alrt"></h3>
+                    <div><div> father's name*</div> <input type="text" name="fathername" id="fathername" placeholder="father name" class="inp"></div>
+                    <h3 class="alrt"></h3>
+                    <div><div> pin-code*</div> <input type="number" name="pincode" id="pin" class="inp" placeholder="pin-code"></div>
+                    <h3 class="alrt"></h3>
+                    <div><div class="cn"> contact number*</div> <input type="number" name="contact" id="cn" maxlength="10" class="inp" placeholder="contact NO"></div>
+                    <h3 class="alrt"></h3>
+                    <div><div> e-mail*</div> <input type="email" name="email" id="email" class="inp" placeholder="email"></div>
+                    <h3 class="alrt"></h3>
+                </div>
+
+                <div class="container" id="page2">
+                    <div class="fbx"><div class="en"> Enrollment No.*</div> <input type="number" name="en" placeholder="enrollment no" id="en" ></div>
+                    <h3 class="alrt"></h3>
+                    <div class="fbx"><div class="en"> college Roll-No.*</div> <input type="number" name="cr" placeholder="college Roll-No" id="cr" ></div>
+                    <h3 class="alrt"></h3>
+                    <div><div class="div">Department*</div>
+                    <select name="department" id="department" >
+                        <option value="">Select department</option>
+                        <option value="electronic">Electronics</option>
+                        <option value="ComputerScience">Computer Science</option>
+                        <option value="Chmistry">chemistry</option>
+                        <option value="Physics">Physics</option>
+                        <option value="Instrumental">instrumentation</option>
+                        <option value="Botany">botany</option>
+                        <option value="Zoology">zoology</option>
+                    </select></div>
+                    <div><div class="div">course*</div>
+                        <select name="course" id="course">
+                            <option value="">select your course</option>
+                            <option value="B.Sc (Hons) (Electronics)">B.Sc (Hons) Electronics</option>
+                            <option value="B.Sc (Hons) Computer Science">B.Sc (Hons) Computer Science</option>
+                            <option value="B.Sc (Hons) chmistry">B.Sc (Hons) chemistry</option>
+                            <option value="B.Sc (Hons) Physics">B.Sc (Hons) Physics</option>
+                            <option value="B.Sc (Hons) instrumentation">B.Sc (Hons) instrumentation</option>
+                            <option value="B.Sc (Hons) botany">B.Sc (Hons) botany</option>
+                            <option value="B.Sc (Hons) zoology">B.Sc (Hons) zoology</option>
+                        </select>
+                    </div> <br>
+                    <div><fieldset>
+                        <legend>Certificate Type*</legend>
+                        <div class="cer" style="width: 90%;"><div style="width: 90%;">transfer certificate</div><input type="checkbox" value="applied" name="certificate1[]" id="tc"></div>
+                        <div class="cer"style="width: 90%;"> <div style="width: 90%;">marksheet</div> <input type="checkbox" value="applied" name="certificate2[]" id="ms"></div>
+                        <div class="cer"style="width: 90%;"> <div style="width: 90%;">achievement certificate</div> <input type="checkbox" value="applied" name="certificate3[]" id="ac"></div>
+                    </fieldset></div>
+                    <div class="sub"><button type="submit" id="sub">submit</button></div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>
